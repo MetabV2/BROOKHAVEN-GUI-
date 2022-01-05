@@ -93,7 +93,7 @@ local ImageButton = Instance.new("ImageButton")
 --Properties:
 
 METABGUI.Name = "METAB GUI "
-METABGUI.Parent = game.CoreGUI
+METABGUI.Parent = game.CoreGui
 METABGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 METABGUI.ResetOnSpawn = false
 
