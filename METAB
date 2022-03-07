@@ -85,6 +85,10 @@ local Button_26 = Instance.new("ImageButton")
 local BtnText_30 = Instance.new("TextLabel")
 local Button_27 = Instance.new("ImageButton")
 local BtnText_31 = Instance.new("TextLabel")
+local METABBUTTON_5 = Instance.new("ImageButton")
+local BtnText_32 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIGradient_6 = Instance.new("UIGradient")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local ImageButton = Instance.new("ImageButton")
 
@@ -248,7 +252,6 @@ HOMEFRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HOMEFRAME.BackgroundTransparency = 1.000
 HOMEFRAME.Position = UDim2.new(0.323545516, 0, 0.200995743, 0)
 HOMEFRAME.Size = UDim2.new(0, 410, 0, 285)
-HOMEFRAME.Visible = false
 
 ImageLabel.Parent = HOMEFRAME
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -312,6 +315,7 @@ TPFRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TPFRAME.BackgroundTransparency = 1.000
 TPFRAME.Position = UDim2.new(0.462736279, 0, 0.0834299847, 0)
 TPFRAME.Size = UDim2.new(0, 416, 0, 309)
+TPFRAME.Visible = false
 
 Button.Name = "Button "
 Button.Parent = TPFRAME
@@ -696,7 +700,7 @@ Button_15.Parent = TPFRAME
 Button_15.AnchorPoint = Vector2.new(1, 1)
 Button_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button_15.BackgroundTransparency = 1.000
-Button_15.Position = UDim2.new(0.264269233, 0, 0.912932038, 0)
+Button_15.Position = UDim2.new(0.466192305, 0, 0.912932038, 0)
 Button_15.Size = UDim2.new(0.385020077, 0, 0.0737401098, 0)
 Button_15.Image = "rbxassetid://2790382281"
 Button_15.ImageColor3 = Color3.fromRGB(19, 143, 143)
@@ -1077,11 +1081,45 @@ BtnText_31.TextScaled = true
 BtnText_31.TextSize = 14.000
 BtnText_31.TextWrapped = true
 
+METABBUTTON_5.Name = "METAB BUTTON"
+METABBUTTON_5.Parent = METAB
+METABBUTTON_5.AnchorPoint = Vector2.new(1, 1)
+METABBUTTON_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+METABBUTTON_5.BackgroundTransparency = 1.000
+METABBUTTON_5.Position = UDim2.new(0.317705572, 0, 0.72055608, 0)
+METABBUTTON_5.Size = UDim2.new(0.146258861, 0, 0.0299225338, 0)
+METABBUTTON_5.Image = "rbxassetid://2790382281"
+METABBUTTON_5.ImageColor3 = Color3.fromRGB(34, 255, 255)
+METABBUTTON_5.ScaleType = Enum.ScaleType.Slice
+METABBUTTON_5.SliceCenter = Rect.new(4, 4, 252, 252)
+
+BtnText_32.Name = "BtnText"
+BtnText_32.Parent = METABBUTTON_5
+BtnText_32.AnchorPoint = Vector2.new(0.5, 0.5)
+BtnText_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BtnText_32.BackgroundTransparency = 1.000
+BtnText_32.BorderSizePixel = 0
+BtnText_32.Position = UDim2.new(0.501231551, 0, 0.5, 0)
+BtnText_32.Size = UDim2.new(0.989716768, -5, 0.917372882, -5)
+BtnText_32.Font = Enum.Font.GothamBlack
+BtnText_32.Text = "STOP ALL SCRIPT"
+BtnText_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+BtnText_32.TextScaled = true
+BtnText_32.TextSize = 14.000
+BtnText_32.TextWrapped = true
+
+UIAspectRatioConstraint_6.Parent = METABBUTTON_5
+UIAspectRatioConstraint_6.AspectRatio = 7.000
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_6.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_6.Rotation = -135
+UIGradient_6.Parent = METABBUTTON_5
+
 ImageLabel_2.Parent = METABGUI
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_2.BackgroundTransparency = 1.000
 ImageLabel_2.Size = UDim2.new(0, 1367, 0, 624)
-ImageLabel_2.Visible = false
 ImageLabel_2.Image = "http://www.roblox.com/asset/?id=8139799244"
 ImageLabel_2.ScaleType = Enum.ScaleType.Tile
 
@@ -1094,7 +1132,7 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=8139623167"
 
 -- Scripts:
 
-local function WSMVPZ_fake_script() -- METABBUTTON.LocalScript 
+local function JBMIO_fake_script() -- METABBUTTON.LocalScript 
 	local script = Instance.new('LocalScript', METABBUTTON)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1105,8 +1143,8 @@ local function WSMVPZ_fake_script() -- METABBUTTON.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(WSMVPZ_fake_script)()
-local function HEQWBRR_fake_script() -- METABBUTTON.DESIGN 
+coroutine.wrap(JBMIO_fake_script)()
+local function EUYKSWE_fake_script() -- METABBUTTON.DESIGN 
 	local script = Instance.new('LocalScript', METABBUTTON)
 
 	local btn = script.Parent
@@ -1149,8 +1187,8 @@ local function HEQWBRR_fake_script() -- METABBUTTON.DESIGN
 		end
 	end)
 end
-coroutine.wrap(HEQWBRR_fake_script)()
-local function IPCKLUW_fake_script() -- METABBUTTON_2.LocalScript 
+coroutine.wrap(EUYKSWE_fake_script)()
+local function JFFJQ_fake_script() -- METABBUTTON_2.LocalScript 
 	local script = Instance.new('LocalScript', METABBUTTON_2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1161,8 +1199,8 @@ local function IPCKLUW_fake_script() -- METABBUTTON_2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(IPCKLUW_fake_script)()
-local function WQHX_fake_script() -- METABBUTTON_2.DESIGN 
+coroutine.wrap(JFFJQ_fake_script)()
+local function ETYV_fake_script() -- METABBUTTON_2.DESIGN 
 	local script = Instance.new('LocalScript', METABBUTTON_2)
 
 	local btn = script.Parent
@@ -1205,8 +1243,8 @@ local function WQHX_fake_script() -- METABBUTTON_2.DESIGN
 		end
 	end)
 end
-coroutine.wrap(WQHX_fake_script)()
-local function FZFGTB_fake_script() -- METABBUTTON_3.LocalScript 
+coroutine.wrap(ETYV_fake_script)()
+local function WXRZTKH_fake_script() -- METABBUTTON_3.LocalScript 
 	local script = Instance.new('LocalScript', METABBUTTON_3)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1217,8 +1255,8 @@ local function FZFGTB_fake_script() -- METABBUTTON_3.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(FZFGTB_fake_script)()
-local function QAJL_fake_script() -- METABBUTTON_3.DESIGN 
+coroutine.wrap(WXRZTKH_fake_script)()
+local function VPNN_fake_script() -- METABBUTTON_3.DESIGN 
 	local script = Instance.new('LocalScript', METABBUTTON_3)
 
 	local btn = script.Parent
@@ -1261,8 +1299,8 @@ local function QAJL_fake_script() -- METABBUTTON_3.DESIGN
 		end
 	end)
 end
-coroutine.wrap(QAJL_fake_script)()
-local function FWJBJAA_fake_script() -- METABBUTTON_4.LocalScript 
+coroutine.wrap(VPNN_fake_script)()
+local function TDQT_fake_script() -- METABBUTTON_4.LocalScript 
 	local script = Instance.new('LocalScript', METABBUTTON_4)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1273,8 +1311,8 @@ local function FWJBJAA_fake_script() -- METABBUTTON_4.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(FWJBJAA_fake_script)()
-local function XGCFCS_fake_script() -- METABBUTTON_4.DESIGN 
+coroutine.wrap(TDQT_fake_script)()
+local function AQUH_fake_script() -- METABBUTTON_4.DESIGN 
 	local script = Instance.new('LocalScript', METABBUTTON_4)
 
 	local btn = script.Parent
@@ -1317,8 +1355,8 @@ local function XGCFCS_fake_script() -- METABBUTTON_4.DESIGN
 		end
 	end)
 end
-coroutine.wrap(XGCFCS_fake_script)()
-local function OASBNOZ_fake_script() -- Button.METAB SCRIPT 
+coroutine.wrap(AQUH_fake_script)()
+local function CMIV_fake_script() -- Button.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1332,8 +1370,8 @@ local function OASBNOZ_fake_script() -- Button.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(OASBNOZ_fake_script)()
-local function YWRC_fake_script() -- Button.TABLE 
+coroutine.wrap(CMIV_fake_script)()
+local function DJKU_fake_script() -- Button.TABLE 
 	local script = Instance.new('LocalScript', Button)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1344,8 +1382,8 @@ local function YWRC_fake_script() -- Button.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(YWRC_fake_script)()
-local function ZXNPW_fake_script() -- Button_2.METAB SCRIPT 
+coroutine.wrap(DJKU_fake_script)()
+local function QGYLWX_fake_script() -- Button_2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1359,8 +1397,8 @@ local function ZXNPW_fake_script() -- Button_2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(ZXNPW_fake_script)()
-local function YCUWMZ_fake_script() -- Button_2.TABLE 
+coroutine.wrap(QGYLWX_fake_script)()
+local function LAVGAJ_fake_script() -- Button_2.TABLE 
 	local script = Instance.new('LocalScript', Button_2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1371,8 +1409,8 @@ local function YCUWMZ_fake_script() -- Button_2.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(YCUWMZ_fake_script)()
-local function QPQSYV_fake_script() -- Button_3.METAB SCRIPT 
+coroutine.wrap(LAVGAJ_fake_script)()
+local function VSQRHR_fake_script() -- Button_3.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_3)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1387,8 +1425,8 @@ local function QPQSYV_fake_script() -- Button_3.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(QPQSYV_fake_script)()
-local function YHGKGV_fake_script() -- Button_3.TABLE 
+coroutine.wrap(VSQRHR_fake_script)()
+local function CBGIW_fake_script() -- Button_3.TABLE 
 	local script = Instance.new('LocalScript', Button_3)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1399,8 +1437,8 @@ local function YHGKGV_fake_script() -- Button_3.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(YHGKGV_fake_script)()
-local function HTNOG_fake_script() -- Button_4.METAB SCRIPT 
+coroutine.wrap(CBGIW_fake_script)()
+local function RDVMNYW_fake_script() -- Button_4.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_4)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1416,8 +1454,8 @@ local function HTNOG_fake_script() -- Button_4.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(HTNOG_fake_script)()
-local function RIQI_fake_script() -- Button_4.TABLE 
+coroutine.wrap(RDVMNYW_fake_script)()
+local function QXVUZHY_fake_script() -- Button_4.TABLE 
 	local script = Instance.new('LocalScript', Button_4)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1428,8 +1466,8 @@ local function RIQI_fake_script() -- Button_4.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(RIQI_fake_script)()
-local function LQWFFXT_fake_script() -- Button_5.METAB SCRIPT 
+coroutine.wrap(QXVUZHY_fake_script)()
+local function NRIXIS_fake_script() -- Button_5.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_5)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1443,8 +1481,8 @@ local function LQWFFXT_fake_script() -- Button_5.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(LQWFFXT_fake_script)()
-local function HBEIJI_fake_script() -- Button_5.TABLE 
+coroutine.wrap(NRIXIS_fake_script)()
+local function YGMHVE_fake_script() -- Button_5.TABLE 
 	local script = Instance.new('LocalScript', Button_5)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1455,8 +1493,8 @@ local function HBEIJI_fake_script() -- Button_5.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(HBEIJI_fake_script)()
-local function KUUJZ_fake_script() -- Button_6.METAB SCRIPT 
+coroutine.wrap(YGMHVE_fake_script)()
+local function XDHIT_fake_script() -- Button_6.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_6)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1470,8 +1508,8 @@ local function KUUJZ_fake_script() -- Button_6.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(KUUJZ_fake_script)()
-local function CGZT_fake_script() -- Button_6.TABLE 
+coroutine.wrap(XDHIT_fake_script)()
+local function YHQWLJV_fake_script() -- Button_6.TABLE 
 	local script = Instance.new('LocalScript', Button_6)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1482,8 +1520,8 @@ local function CGZT_fake_script() -- Button_6.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(CGZT_fake_script)()
-local function BZSVN_fake_script() -- Button_7.METAB SCRIPT 
+coroutine.wrap(YHQWLJV_fake_script)()
+local function KAFSHR_fake_script() -- Button_7.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_7)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1492,8 +1530,8 @@ local function BZSVN_fake_script() -- Button_7.METAB SCRIPT
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/CLOTHES/main/METAB", true))()
 	end)
 end
-coroutine.wrap(BZSVN_fake_script)()
-local function UQNBCMH_fake_script() -- Button_7.TABLE 
+coroutine.wrap(KAFSHR_fake_script)()
+local function WKHWTT_fake_script() -- Button_7.TABLE 
 	local script = Instance.new('LocalScript', Button_7)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1504,8 +1542,8 @@ local function UQNBCMH_fake_script() -- Button_7.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(UQNBCMH_fake_script)()
-local function UCTEQ_fake_script() -- Button_8.METAB SCRIPT 
+coroutine.wrap(WKHWTT_fake_script)()
+local function ENLLZEA_fake_script() -- Button_8.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_8)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1519,8 +1557,8 @@ local function UCTEQ_fake_script() -- Button_8.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(UCTEQ_fake_script)()
-local function GOKAL_fake_script() -- Button_8.TABLE 
+coroutine.wrap(ENLLZEA_fake_script)()
+local function GLMYUB_fake_script() -- Button_8.TABLE 
 	local script = Instance.new('LocalScript', Button_8)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1531,14 +1569,16 @@ local function GOKAL_fake_script() -- Button_8.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(GOKAL_fake_script)()
-local function OQKHA_fake_script() -- Button_9.METAB SCRIPT 
+coroutine.wrap(GLMYUB_fake_script)()
+local function VHNYGU_fake_script() -- Button_9.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_9)
 
 	script.Parent.MouseButton1Down:connect(function()
-	
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/RP-NAME/main/METAB", true))()
-	end)
+		_G.Bin = false
+		while _G.Bin do
+			wait(0.2)
+			end
+		end)
 	
 	
 	
@@ -1546,8 +1586,8 @@ local function OQKHA_fake_script() -- Button_9.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(OQKHA_fake_script)()
-local function WQFW_fake_script() -- Button_9.TABLE 
+coroutine.wrap(VHNYGU_fake_script)()
+local function DXNJB_fake_script() -- Button_9.TABLE 
 	local script = Instance.new('LocalScript', Button_9)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1558,8 +1598,8 @@ local function WQFW_fake_script() -- Button_9.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(WQFW_fake_script)()
-local function XCIF_fake_script() -- Button_10.METAB SCRIPT 
+coroutine.wrap(DXNJB_fake_script)()
+local function XVVT_fake_script() -- Button_10.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_10)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1574,8 +1614,8 @@ local function XCIF_fake_script() -- Button_10.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(XCIF_fake_script)()
-local function IAQUN_fake_script() -- Button_10.TABLE 
+coroutine.wrap(XVVT_fake_script)()
+local function EXLG_fake_script() -- Button_10.TABLE 
 	local script = Instance.new('LocalScript', Button_10)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1586,8 +1626,8 @@ local function IAQUN_fake_script() -- Button_10.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(IAQUN_fake_script)()
-local function MNXJBNR_fake_script() -- Button_11.METAB SCRIPT 
+coroutine.wrap(EXLG_fake_script)()
+local function XPQGGVC_fake_script() -- Button_11.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_11)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1601,8 +1641,8 @@ local function MNXJBNR_fake_script() -- Button_11.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(MNXJBNR_fake_script)()
-local function VNNCYLM_fake_script() -- Button_11.TABLE 
+coroutine.wrap(XPQGGVC_fake_script)()
+local function BHZZO_fake_script() -- Button_11.TABLE 
 	local script = Instance.new('LocalScript', Button_11)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1613,8 +1653,8 @@ local function VNNCYLM_fake_script() -- Button_11.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(VNNCYLM_fake_script)()
-local function XWTY_fake_script() -- Button_12.METAB SCRIPT 
+coroutine.wrap(BHZZO_fake_script)()
+local function BPAPKZR_fake_script() -- Button_12.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_12)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1628,8 +1668,8 @@ local function XWTY_fake_script() -- Button_12.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(XWTY_fake_script)()
-local function BIIKSS_fake_script() -- Button_12.TABLE 
+coroutine.wrap(BPAPKZR_fake_script)()
+local function ANFE_fake_script() -- Button_12.TABLE 
 	local script = Instance.new('LocalScript', Button_12)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1640,8 +1680,8 @@ local function BIIKSS_fake_script() -- Button_12.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(BIIKSS_fake_script)()
-local function EOJKKF_fake_script() -- Button_13.METAB SCRIPT 
+coroutine.wrap(ANFE_fake_script)()
+local function MDRI_fake_script() -- Button_13.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_13)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1649,8 +1689,8 @@ local function EOJKKF_fake_script() -- Button_13.METAB SCRIPT
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/RP-BIO-/main/METAB", true))()
 	end)
 end
-coroutine.wrap(EOJKKF_fake_script)()
-local function OPOR_fake_script() -- Button_13.TABLE 
+coroutine.wrap(MDRI_fake_script)()
+local function FGRVXB_fake_script() -- Button_13.TABLE 
 	local script = Instance.new('LocalScript', Button_13)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1661,8 +1701,8 @@ local function OPOR_fake_script() -- Button_13.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(OPOR_fake_script)()
-local function EIHNVHK_fake_script() -- Button_14.TABLE 
+coroutine.wrap(FGRVXB_fake_script)()
+local function PLGE_fake_script() -- Button_14.TABLE 
 	local script = Instance.new('LocalScript', Button_14)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1673,16 +1713,16 @@ local function EIHNVHK_fake_script() -- Button_14.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(EIHNVHK_fake_script)()
-local function LWVR_fake_script() -- Button_14.METAB SCRIPT 
+coroutine.wrap(PLGE_fake_script)()
+local function KUMJPO_fake_script() -- Button_14.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_14)
 
 	script.Parent.MouseButton1Down:connect(function()
 	
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/BROOKHAVEN/main/METAB", true))()end)
 end
-coroutine.wrap(LWVR_fake_script)()
-local function UZULY_fake_script() -- Button_15.TABLE 
+coroutine.wrap(KUMJPO_fake_script)()
+local function XNSLWEP_fake_script() -- Button_15.TABLE 
 	local script = Instance.new('LocalScript', Button_15)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1693,8 +1733,8 @@ local function UZULY_fake_script() -- Button_15.TABLE
 		wait(0.1)
 	end)
 end
-coroutine.wrap(UZULY_fake_script)()
-local function YIDPFT_fake_script() -- Button_15.METAB SCRIPT 
+coroutine.wrap(XNSLWEP_fake_script)()
+local function HBVSOMT_fake_script() -- Button_15.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_15)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1703,8 +1743,8 @@ local function YIDPFT_fake_script() -- Button_15.METAB SCRIPT
 	
 	end)
 end
-coroutine.wrap(YIDPFT_fake_script)()
-local function BYLC_fake_script() -- Button_16.METAB SCRIPT 
+coroutine.wrap(HBVSOMT_fake_script)()
+local function VUNVX_fake_script() -- Button_16.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_16)
 
 	
@@ -1717,8 +1757,8 @@ local function BYLC_fake_script() -- Button_16.METAB SCRIPT
 		
 		end)
 end
-coroutine.wrap(BYLC_fake_script)()
-local function AURJXC_fake_script() -- Button_17.METAB SCRIPT 
+coroutine.wrap(VUNVX_fake_script)()
+local function OIEKILN_fake_script() -- Button_17.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_17)
 
 	
@@ -1729,8 +1769,8 @@ local function AURJXC_fake_script() -- Button_17.METAB SCRIPT
 	
 		end)
 end
-coroutine.wrap(AURJXC_fake_script)()
-local function CAWTSSZ_fake_script() -- Button_18.METAB SCRIPT 
+coroutine.wrap(OIEKILN_fake_script)()
+local function ZEWHHMA_fake_script() -- Button_18.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_18)
 
 	
@@ -1749,8 +1789,8 @@ local function CAWTSSZ_fake_script() -- Button_18.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(CAWTSSZ_fake_script)()
-local function JDNPEU_fake_script() -- Button_19.METAB SCRIPT 
+coroutine.wrap(ZEWHHMA_fake_script)()
+local function JOUXX_fake_script() -- Button_19.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_19)
 
 	
@@ -1768,8 +1808,8 @@ local function JDNPEU_fake_script() -- Button_19.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(JDNPEU_fake_script)()
-local function EUSTCD_fake_script() -- Button_20.METAB SCRIPT 
+coroutine.wrap(JOUXX_fake_script)()
+local function NTEH_fake_script() -- Button_20.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_20)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1784,8 +1824,8 @@ local function EUSTCD_fake_script() -- Button_20.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(EUSTCD_fake_script)()
-local function DAGIMHS_fake_script() -- Button_21.METAB SCRIPT 
+coroutine.wrap(NTEH_fake_script)()
+local function SUKO_fake_script() -- Button_21.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_21)
 
 	
@@ -1803,8 +1843,8 @@ local function DAGIMHS_fake_script() -- Button_21.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(DAGIMHS_fake_script)()
-local function GPBE_fake_script() -- AUTOFARMFRAME.DESIGN 
+coroutine.wrap(SUKO_fake_script)()
+local function KCAER_fake_script() -- AUTOFARMFRAME.DESIGN 
 	local script = Instance.new('LocalScript', AUTOFARMFRAME)
 
 	local btn = script.Parent
@@ -1847,8 +1887,8 @@ local function GPBE_fake_script() -- AUTOFARMFRAME.DESIGN
 		end
 	end)
 end
-coroutine.wrap(GPBE_fake_script)()
-local function WOAEWLP_fake_script() -- Button_22.METAB SCRIPT 
+coroutine.wrap(KCAER_fake_script)()
+local function LSNW_fake_script() -- Button_22.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_22)
 
 	
@@ -1868,16 +1908,16 @@ local function WOAEWLP_fake_script() -- Button_22.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(WOAEWLP_fake_script)()
-local function MCOJMKF_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(LSNW_fake_script)()
+local function MWSOR_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(MCOJMKF_fake_script)()
-local function HURAFV_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(MWSOR_fake_script)()
+local function AVLV_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -1920,8 +1960,8 @@ local function HURAFV_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(HURAFV_fake_script)()
-local function STVXPY_fake_script() -- METAB.DEPLACE  
+coroutine.wrap(AVLV_fake_script)()
+local function BQKUKD_fake_script() -- METAB.DEPLACE  
 	local script = Instance.new('LocalScript', METAB)
 
 	
@@ -1999,8 +2039,8 @@ local function STVXPY_fake_script() -- METAB.DEPLACE
 	
 	
 end
-coroutine.wrap(STVXPY_fake_script)()
-local function DDKL_fake_script() -- Button_23.METAB SCRIPT 
+coroutine.wrap(BQKUKD_fake_script)()
+local function VRFJ_fake_script() -- Button_23.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_23)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2015,8 +2055,8 @@ local function DDKL_fake_script() -- Button_23.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(DDKL_fake_script)()
-local function SWMCPDL_fake_script() -- Button_24.METAB SCRIPT 
+coroutine.wrap(VRFJ_fake_script)()
+local function IKJE_fake_script() -- Button_24.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_24)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2030,8 +2070,8 @@ local function SWMCPDL_fake_script() -- Button_24.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(SWMCPDL_fake_script)()
-local function LILYW_fake_script() -- Button_25.METAB SCRIPT 
+coroutine.wrap(IKJE_fake_script)()
+local function KDSSW_fake_script() -- Button_25.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_25)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2044,8 +2084,8 @@ local function LILYW_fake_script() -- Button_25.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(LILYW_fake_script)()
-local function AKTKU_fake_script() -- Button_26.METAB SCRIPT 
+coroutine.wrap(KDSSW_fake_script)()
+local function AZNAF_fake_script() -- Button_26.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_26)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2058,8 +2098,8 @@ local function AKTKU_fake_script() -- Button_26.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(AKTKU_fake_script)()
-local function NMSLINY_fake_script() -- Button_27.METAB SCRIPT 
+coroutine.wrap(AZNAF_fake_script)()
+local function QOGYWAF_fake_script() -- Button_27.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button_27)
 
 	
@@ -2087,15 +2127,70 @@ local function NMSLINY_fake_script() -- Button_27.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(NMSLINY_fake_script)()
-local function GBIUQB_fake_script() -- ImageLabel_2.Script 
+coroutine.wrap(QOGYWAF_fake_script)()
+local function XYQAPDB_fake_script() -- METABBUTTON_5.LocalScript 
+	local script = Instance.new('LocalScript', METABBUTTON_5)
+
+	script.Parent.MouseButton1Click:connect(function()
+		_G.Bin = false
+		while _G.Bin do
+			wait()
+			end
+	end)
+end
+coroutine.wrap(XYQAPDB_fake_script)()
+local function IJOVOE_fake_script() -- METABBUTTON_5.DESIGN 
+	local script = Instance.new('LocalScript', METABBUTTON_5)
+
+	local btn = script.Parent
+	local uiGradient = btn:WaitForChild("UIGradient")
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local gradientRestoreTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(-0.35, 0)})
+	local gradientAddTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(1, 0)})
+	
+	
+	btn.MouseEnter:Connect(function()
+		
+		isHovering = true
+		
+		gradientAddTween:Play()
+	end)
+	
+	btn.MouseLeave:Connect(function()
+		
+		isHovering = false
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Down:Connect(function()
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Up:Connect(function()
+		
+		if not isHovering then
+			gradientRestoreTween:Play()
+		else
+			gradientAddTween:Play()
+		end
+	end)
+end
+coroutine.wrap(IJOVOE_fake_script)()
+local function JNRO_fake_script() -- ImageLabel_2.Script 
 	local script = Instance.new('Script', ImageLabel_2)
 
 	wait(4)
 	script.Parent:Destroy()
 end
-coroutine.wrap(GBIUQB_fake_script)()
-local function BEQRV_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(JNRO_fake_script)()
+local function EFYDUVU_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -2103,4 +2198,4 @@ local function BEQRV_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BEQRV_fake_script)()
+coroutine.wrap(EFYDUVU_fake_script)()
